@@ -17,7 +17,7 @@ import { useAuth0 } from './auth0';
 
 import 'stream-chat-react/dist/css/index.css';
 
-const chatClient = new StreamChat('beyu2z5xwnea');
+const chatClient = new StreamChat('<your stream api key>');
 
 function ChatView() {
   const [channel, setChannel] = useState(null);
@@ -48,7 +48,7 @@ function ChatView() {
         token
       );
 
-      const channel = chatClient.channel('team', 'group-messaging-2');
+      const channel = chatClient.channel('team', 'chat');
 
       try {
         await channel.watch();
@@ -89,7 +89,7 @@ function ChatView() {
                     className="logout"
                     onClick={() =>
                       logout({
-                        returnTo: 'http://localhost:3001/',
+                        returnTo: 'http://localhost:3000/',
                       })
                     }
                   >
