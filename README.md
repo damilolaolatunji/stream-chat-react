@@ -1,6 +1,6 @@
 # Secure Chat App with React, Stream and Auth0
 
-Tutorial:
+Tutorial: https://getstream.io/blog/securing-a-chat-app-with-react-and-auth0/
 
 ## Getting Started
 
